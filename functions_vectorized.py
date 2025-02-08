@@ -13,7 +13,8 @@ def are_multisets_equal(x, y):
 
 
 def max_after_zero(x):
-    pass
+    zero = x == 0
+    return x[1:][zero[:-1]].max()
 
 
 def convert_image(img, coefs):
